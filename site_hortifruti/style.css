@@ -1,0 +1,92 @@
+body{
+    font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: rgb(255, 200, 87);
+    color:black;
+    margin: 0; /*remove a margem padrão*/
+}
+
+nav ul{
+    display: flex; /*coloca os textos um do lado do outro em vez de cada um em uma linha*/
+    gap: 20px; /*espaçamento entre os textos*/
+    list-style: none; /*remove as bolinhas dos tópicos*/
+    justify-content: center; /*centraliza os textos*/
+    padding: 8px; /*espaço do começo do site até o banner*/
+}
+nav a{ /*Menu da Página*/
+    color: #000000;
+    font-weight: bold; /*deixar em negrito*/
+}
+
+.banner{
+    width: 100%;
+    display: block;
+}
+h1{ /*Subtitulo*/
+    color: #000000;
+    font-size: 1.55em;
+    text-align: center;
+}
+.subtitulo{ /*Texto abaixo do subtitulo*/
+    font-size: 0.95em;
+    color:#000000;
+    text-align: center;
+}
+
+.lista{
+    display: flex; /*coloca os cards lado a lado*/
+    flex-wrap: wrap; /*os cards q não couber na linha, vai para a linha de baixo*/
+    gap: 20px; /*espaçamento entre os cards*/
+    padding: 0 55px; /*espaço entre a parede do site e o card*/
+    justify-content: center; /*centraliza os cards no site*/
+}
+.card{
+    border: 1px solid rgb(22, 112, 122); /*cria a borda, espressura, estilo e cor*/
+    border-radius: 15px; /*arredondamento dos cantos*/
+    padding: 15px; /*espaço entre a borda do card com o conteúdo*/
+    background-color: rgb(22, 112, 122); /*cor do fundo do card*/
+    width: 220px; /*largura do card*/
+}
+.card img{
+    width: 90%; /*quantidade q a imagem vai ocupar da largura do card*/
+    height: 180px; /*fixa a altura da imagem*/ 
+    object-fit: cover; /*faz a imagem preencher o espaço do height sem distorcer*/
+    border-radius: 8px; /*arredonda os cantos da imagem*/
+    display: block; /*a imagem vira uma "caixa"*/
+    margin: 0 auto; /*deixa a imagem centralizada*/
+}
+
+h3{ /*Nome das classes*/
+    color: #000000;
+    font-size: 1.85em;
+    margin: 20px;
+    padding: 20px;
+}
+h4{ /*Nome dos produtos*/
+    color: #000000;
+    font-size: 1.05em;
+}
+.preco{ /*Preço dos produtos*/
+    color:rgb(237, 167, 53);
+    font-size: 1.00em;
+    font-weight: bold;
+}
+button{ /*Botão para adicionar o produto ao carrinho*/
+    color: #ffffff; /*Cor do texto*/
+    background-color: rgb(89, 90, 90);
+    border: 5px solid rgb(89, 90, 90); 
+    border-radius: 15px; 
+    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    transition: background-color 0.3s, border-color 0.3s;
+}
+button:hover{ /*cor do botão quando passa o mouse em cima*/
+    color:#000000;
+    background-color: rgb(251, 243, 228); /*cor interna*/
+    border-color: rgb(251, 243, 228); /*cor da borda*/
+    cursor: pointer; /*o mouse vira uma mão*/
+}
+
+/*Sobre nós*/
+p{
+    color: #000000;
+    font-size: 1.05em;
+}

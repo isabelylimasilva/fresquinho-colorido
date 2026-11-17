@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fresquinho Colorido</title>
+
+    <link rel="stylesheet" href="style.css"> <!--vincular o css com o html-->
+</head>
+<body>
+    <header>
+        <nav>
+            <ul> <!--Menu da página-->
+                <li><a href="#inicio">Início</a></li>
+                <li><a href="#maisvendidos">Mais Vendidos</a></li>
+                <li><a href="#frutas">Frutas</a></li>
+                <li><a href="#verduras">Verduras</a></li>
+                <li><a href="#legumes">Legumes</a></li>
+                <li><a href="#sobre">Sobre Nós</a></li>
+            </ul>
+        </nav>
+        <img class="banner" src="banner.png" alt="Fresquinho Colorido"> <!--Imagem da logo q está no começo do site-->
+    </header>
+
+    <section id="inicio">
+        <h1>O melhor hortifruti da região, com muito sabor e muita cor!</h1> <!--Texto abaixo da logo-->
+        <p class="subtitulo">Frutas, legumes e verduras fresquinhas, escolhidas com carinho e entregues no mesmo dia. 
+        Faça seu pedido e sinta a diferença.</p>
+    </section>
+
+    <section class="produtos" id="maisvendidos"> 
+        <h3>Os Mais Vendidos</h3>
+        <div class="lista"> 
+            <article class="card">
+                <img src="morango.jpg" alt="ImagemMorango"> 
+                <h4>Morango</h4>
+                <p class="preco">R$10,00 a bandeja</p> 
+                <button onclick="funcaobtn('Morango')">Adicionar Ao Carrinho</button> 
+            </article>
+            <article class="card">
+                <img src="laranja.jpg" alt="ImagemLaranja">
+                <h4>Laranja</h4>
+                <p class="preco">R$4,90 kg</p>
+                <button onclick="funcaobtn('Laranja')">Adicionar Ao Carrinho</button>
+            </article>
+            <article class="card">
+                <img src="batata.jpg" alt="ImagemBatata">
+                <h4>Batata</h4>
+                <p class="preco">R$6,50 kg</p>
+                <button onclick="funcaobtn('Batata')">Adicionar Ao Carrinho</button>
+            </article>
+            <article class="card"> 
+                <img src="alface.jpg" alt="ImagemAlface">
+                <h4>Alface</h4>
+                <p class="preco">R$3,50 cada</p>
+                <button onclick="funcaobtn('Alface')">Adicionar Ao Carrinho</button>
+            </article>
+        </div>
+    </section>
+
+    <section class="produtos" id="frutas"> <!--Separa a classe dos produtos pelo id-->
+        <h3>Frutas</h3>
+        <div class="lista"> <!--Lista das frutas-->
+            <article class="card"> <!--Fruta 1-->
+                <img src="morango.jpg" alt="ImagemMorango"> <!--imagem do produto-->
+                <h4>Morango</h4> <!--Nome-->
+                <p class="preco">R$10,00 a bandeja</p> <!--Preço-->
+                <button onclick="funcaobtn('Morango')">Adicionar Ao Carrinho</button> <!--Botão para adicionar o produto ao carrinho e aparecer uma mensagem-->
+            </article>
+            <article class="card"> <!--Fruta 2-->
+                <img src="banana.jpg" alt="ImagemBanana">
+                <h4>Banana</h4>
+                <p class="preco">R$6,99 kg</p>
+                <button onclick="funcaobtn('Banana')">Adicionar Ao Carrinho</button>
+            </article>
+            <article class="card"> <!--Fruta 3-->
+                <img src="maca.jpg" alt="ImagemMaca">
+                <h4>Maçã</h4>
+                <p class="preco">R$2,90 kg</p>
+                <button onclick="funcaobtn('Maçã')">Adicionar Ao Carrinho</button>
+            </article>
+            <article class="card"> <!--Fruta 4-->
+                <img src="abacaxi.jpg" alt="ImagemAbacaxi">
+                <h4>Abacaxi</h4>
+                <p class="preco">R$7,60 kg</p>
+                <button onclick="funcaobtn('Abacaxi')">Adicionar Ao Carrinho</button>
+            </article>
+            <article class="card"> <!--Fruta 5-->
+                <img src="abacate.jpg" alt="ImagemAbacate">
+                <h4>Abacate</h4>
+                <p class="preco">R$6,99 kg</p>
+                <button onclick="funcaobtn('Abacate')">Adicionar Ao Carrinho</button>
+            </article>
+            <article class="card"> <!--Fruta 6-->
+                <img src="melancia.jpg" alt="ImagemMelancia">
+                <h4>Melancia</h4>
+                <p class="preco">R$2,90 kg</p>
+                <button onclick="funcaobtn('Melancia')">Adicionar Ao Carrinho</button>
+            </article>
+            <article class="card"> <!--Fruta 7-->
+                <img src="kiwi.jpg" alt="ImagemKiwi">
+                <h4>Kiwi</h4>
+                <p class="preco">R$10,99 kg</p>
+                <button onclick="funcaobtn('Kiwi')">Adicionar Ao Carrinho</button>
+            </article>
+            <article class="card"> <!--Fruta 8-->
+                <img src="laranja.jpg" alt="ImagemLaranja">
+                <h4>Laranja</h4>
+                <p class="preco">R$4,90 kg</p>
+                <button onclick="funcaobtn('Laranja')">Adicionar Ao Carrinho</button>
+            </article>
+        </div>
+    </section>
+
+    <section class="produtos" id="verduras">
+        <h3>Verduras</h3>
+        <div class="lista">
+            <article class="card"> <!--Verdura 1-->
+                <img src="alface.jpg" alt="ImagemAlface">
+                <h4>Alface</h4>
+                <p class="preco">R$3,50 cada</p>
+                <button onclick="funcaobtn('Alface')">Adicionar Ao Carrinho</button>
+            </article>
+            <article class="card"> <!--Verdura 2-->
+                <img src="repolho.jpg" alt="ImagemRepolho">
+                <h4>Repolho</h4>
+                <p class="preco">R$1,99 kg</p>
+                <button onclick="funcaobtn('Repolho')">Adicionar Ao Carrinho</button>
+            </article>
+            <article class="card"> <!--Verdura 3-->
+                <img src="rucula.jpg" alt="ImagemRucula">
+                <h4>Rúcula</h4>
+                <p class="preco">R$4,50 kg</p>
+                <button onclick="funcaobtn('Rúcula')">Adicionar Ao Carrinho</button>
+            </article>
+            <article class="card"> <!--Verdura 4-->
+                <img src="couve.jpg" alt="ImagemCouve">
+                <h4>Couve</h4>
+                <p class="preco">R$4,99 kg</p>
+                <button onclick="funcaobtn('Couve')">Adicionar Ao Carrinho</button>
+            </article>
+        </div>
+    </section>
+
+    <section class="produtos" id="legumes">
+        <h3>Legumes</h3>
+        <div class="lista">
+            <article class="card"> <!--Legume 1-->
+                <img src="cenoura.jpg" alt="ImagemCenoura">
+                <h4>Cenoura</h4>
+                <p class="preco">R$3,49 kg</p>
+                <button onclick="funcaobtn('Cenoura')">Adicionar Ao Carrinho</button>
+            </article>
+            <article class="card"> <!--Legume 2-->
+                <img src="batata.jpg" alt="ImagemBatata">
+                <h4>Batata</h4>
+                <p class="preco">R$6,50 kg</p>
+                <button onclick="funcaobtn('Batata')">Adicionar Ao Carrinho</button>
+            </article>
+            <article class="card"> <!--Legume 3-->
+                <img src="beterraba.jpg" alt="ImagemBeterraba">
+                <h4>Beterraba</h4>
+                <p class="preco">R$3,50 kg</p>
+                <button onclick="funcaobtn('Beterraba')">Adicionar Ao Carrinho</button>
+            </article>
+            <article class="card"> <!--Fruta 3-->
+                <img src="cebola.jpg" alt="ImagemCebola">
+                <h4>Cebola</h4>
+                <p class="preco">R$5,60 kg</p>
+                <button onclick="funcaobtn('Cebola')">Adicionar Ao Carrinho</button>
+            </article>
+        </div>
+    </section>
+
+    <section id="sobre"> <!--Id para separar o texto sobre a loja dos produtos-->
+        <h3>Sobre Nós</h3> <!--Texto falando um pouco da loja-->
+        <p>O Fresquinho Colorido nasceu de uma ideia simples: levar mais cor, sabor e frescor para a mesa das famílias. 
+            Estamos no mercado desde 2026 e já fazemos parte da rotina de muita gente.</p>
+        <p>Trabalhamos direto com pequenos produtores da região, escolhendo cada fruta, legume e verdura com muito cuidado. 
+            Assim, tudo chega até você mais fresco, com preço justo, e ainda ajudamos quem planta pertinho de casa.</p>
+        <p>Aqui, o atendimento é de vizinho: a gente conhece os clientes, ouve o que você precisa e separa os melhores produtos do dia. 
+            E, onde quer que você esteja, enviamos para todo o estado de São Paulo, com o mesmo capricho e frescor.</p>
+    </section>
+
+    <script src="script.js"></script> <!--vincular o JavaScript com o html-->
+</body>
+</html>
